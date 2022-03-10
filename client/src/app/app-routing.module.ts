@@ -7,11 +7,13 @@ import { MemberListComponent } from './members/member-list/member-list.component
 import { ReportsComponent } from './reports/reports.component';
 import { IntegrationsComponent } from './integrations/integrations.component';
 import { NewreportComponent } from './newreport/newreport.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'members', component: MemberListComponent},
   {path: 'members/:id', component: MemberDetailComponent},
+  {path: 'dashboard', component: DashboardComponent},
   {path: 'customers', component: CustomersComponent},
   {path: 'reports', component: ReportsComponent},
   {path: 'integration', component: IntegrationsComponent},
