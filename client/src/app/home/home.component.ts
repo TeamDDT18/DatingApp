@@ -11,7 +11,7 @@ import { AccountService } from '../_services/account.service';
 export class HomeComponent implements OnInit {
   registerMode = false;
 
-  constructor(private http:HttpClient){ }
+  constructor(private http:HttpClient, public accountService: AccountService){ }
 
   ngOnInit(): void {
 
