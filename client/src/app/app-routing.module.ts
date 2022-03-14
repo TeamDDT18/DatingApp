@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
   {path: 'customers', component: CustomersComponent},
   {path: 'reports', component: ReportsComponent},
-  {path: 'integration', component: IntegrationsComponent},
+  {path: 'integrations', component: IntegrationsComponent},
   {path: 'newreport', component: NewreportComponent},
   {path: '**', component: HomeComponent, pathMatch: 'full'},
 ];

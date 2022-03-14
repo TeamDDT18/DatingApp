@@ -15,6 +15,8 @@ import { ReportsComponent } from './reports/reports.component';
 import { IntegrationsComponent } from './integrations/integrations.component';
 import { NewreportComponent } from './newreport/newreport.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { RegisterComponent } from './register/register.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 
 @NgModule({
@@ -29,14 +31,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ReportsComponent,
     IntegrationsComponent,
     NewreportComponent,
-    DashboardComponent
+    DashboardComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

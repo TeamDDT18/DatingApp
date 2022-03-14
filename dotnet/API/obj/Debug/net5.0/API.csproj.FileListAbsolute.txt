@@ -55,3 +55,7 @@ C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\runtimes\win-x
 C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\Humanizer.dll
 C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
