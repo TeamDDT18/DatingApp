@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+<<<<<<< HEAD
 import { HomeComponent } from './home/home.component';
 import { CustomersComponent } from './customers/customers.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
@@ -31,9 +32,17 @@ const routes: Routes = [
   {path: 'server-error', component:ServerErrorComponent},
   {path: '**', component: NotFoundComponent, pathMatch: 'full'},
 ];
+=======
+
+const routes: Routes = [];
+>>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+<<<<<<< HEAD
 export class AppRoutingModule { }
+=======
+export class AppRoutingModule { }
+>>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841

@@ -1,8 +1,11 @@
 {
     "version": "0.2.0",
     "configurations": [
+<<<<<<< HEAD
         
         
+=======
+>>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
         {
             // Use IntelliSense to find out which attributes exist for C# debugging
             // Use hover for the description of the existing attributes
@@ -12,9 +15,15 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
+<<<<<<< HEAD
             "program": "${workspaceFolder}/dotnet/API/bin/Debug/net5.0/API.dll",
             "args": [],
             "cwd": "${workspaceFolder}/dotnet/API",
+=======
+            "program": "${workspaceFolder}/API/bin/Debug/net5.0/API.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/API",
+>>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {

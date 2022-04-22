@@ -14,7 +14,10 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
+<<<<<<< HEAD
     "strictNullChecks":false,
+=======
+>>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2017",

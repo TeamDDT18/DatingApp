@@ -1,6 +1,10 @@
 # Client
 
+<<<<<<< HEAD
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+=======
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
+>>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
 
 ## Development server
 

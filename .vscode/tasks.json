@@ -7,7 +7,11 @@
             "type": "process",
             "args": [
                 "build",
+<<<<<<< HEAD
                 "${workspaceFolder}/dotnet/API/API.csproj",
+=======
+                "${workspaceFolder}/API/API.csproj",
+>>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +23,11 @@
             "type": "process",
             "args": [
                 "publish",
+<<<<<<< HEAD
                 "${workspaceFolder}/dotnet/API/API.csproj",
+=======
+                "${workspaceFolder}/API/API.csproj",
+>>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +41,11 @@
                 "watch",
                 "run",
                 "--project",
+<<<<<<< HEAD
                 "${workspaceFolder}/dotnet/API/API.csproj"
+=======
+                "${workspaceFolder}/API/API.csproj"
+>>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
             ],
             "problemMatcher": "$msCompile"
         }
