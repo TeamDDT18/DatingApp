@@ -1,9 +1,4 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
-<<<<<<< HEAD
-
-=======
-ssl
->>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
 # Compiled output
 /dist
 /tmp
