@@ -1,24 +1,17 @@
-
 <div class="container">
     <div *ngIf="(accountService.currentUser$ | async) === null">
-        <div *ngIf="!registerMode" style='text-align:center;'>
-            <h1>Monitoring devices using OPCUA</h1>
-            <p class="lead">Sign up first</p>
+        <div *ngIf="!registerMode">
+            <p></p>
                 <div class="text-center">
-                    <button (click)="registerToggle()"class="btn btn-primary btn-lg mr-2">Register</button>
-                    <button class="btn btn-info btn-lg">Learn more</button>
+                    <img src="https://opcfoundation.org/wp-content/themes/opc/images/logo.jpg">
+                    <button (click)="registerToggle()">Register</button>
+                    <button >Learn more</button>
                 </div>
-        </div>
+    </div>
     
-        <div *ngIf="registerMode" class="container">
+        <div *ngIf="registerMode">
             <div class="row justify-content-center">
-                <div class="col-4">
                     <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
-                </div>
             </div>
         </div>
-    </div>
-    
-    </div>
-
-    
+</div> 

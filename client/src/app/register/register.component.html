@@ -1,32 +1,28 @@
-
 <div class="form-body">
-    <div class="row">
         <div class="form-holder">
             <div class="form-content">
                 <div class="form-items">
                         <form #registerForm="ngForm" (ngSubmit)="register()" autocomplete="off" >
                             <h3 class="text-center text-primary"><span style="color:black ;font-weight:bold; font-size: larger;">SIGN UP</span></h3>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" name="username" 
+                                <div>
+                                    <input type="text"  name="username" 
                                         [(ngModel)]="model.username" placeholder="Username" required />
                                 </div>
                                 
-                                <div class="form-group">
-                                    <input type="password" class="form-control" name="password" 
+                                <div>
+                                    <input type="password" name="password" 
                                         [(ngModel)]="model.password" placeholder="Password" required/>
                                 </div>
                                 <hr>
                                 <div class="form-group text-center">
-                                    <button class="btn btn-outline-success mr-2" type="submit">Register</button>
-                                
-                                    <button class="btn btn-outline-primary mr-2" (click)="reset()" type="reset">Cancel</button>
+                                    <button class="button-R"  type="submit">Register</button>
+                                    <button class="button-C" (click)="reset()" type="reset">Cancel</button>
                                     </div>
                             </form>
                 </div>
             </div>
         </div>
     </div>
-</div>
  
 <!--
 <section class="vw-100">

@@ -36,7 +36,7 @@ namespace API
             services.AddScoped<ITokenService, TokenService>();
             services.AddDbContext<DataContext>(options =>
             {
-                options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
+                options.UseMySql(_config.GetConnectionString("DefaultConnection"),ServerVersion.AutoDetect(_config.GetConnectionString("DefaultConnection")));
             });
             services.AddControllers();
             services.AddCors();

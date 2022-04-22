@@ -1,28 +1,77 @@
 .dropdown-toggle, .dropdown-item{
     cursor:pointer
 }
+input{
+  font-size: 20px;
+  font-weight: 300;
+  color: #4c4c4c;
+  text-align: center;
+}
 
 .logo{
-width: 250px;
- font-size: 25px;
- font-weight: 700;
- padding: 0 25px;
- color: white;
+ width: 580px;
+ font-size: 20px;
+ padding-left: 25px;
+ color: #0B4A72;
+ text-align: center;
  letter-spacing: 2px;
- 
- border-right: 1px solid #f5f5f5;
+ border-right: 1px solid #0B4A72;
+ font-family: "Arial", Helvetica, sans-serif;
+}
+
+form{
+    padding-right: 3cm;
+}
+
+.button-L {
+  background-color: #9FB4FF;
+  border: 2px solid #4D96FF;
+  border-radius: 30px;
+  box-shadow: #4D96FF 4px 4px 0 0;
+  color: #323233;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-L:hover {
+  background-color: #fee6e3;
+}
+
+.button-L:active {
+  box-shadow: #30AADD 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-L {
+    min-width: 120px;
+    padding: 0 25px;
+  }
 }
 .top_navbar{
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100px;
-    background: #323233;
+    background: #FFF2CD;
     box-shadow: 1px 0 2px rgba(0,0,0,0.125);
     display: flex;
     align-items: center;
+   
    }
+img{
+    padding-left: 0.8cm;
+}
 
    .top_navbar .menu{
     width: calc(100% - 250px);
@@ -40,4 +89,11 @@ width: 250px;
    
    .top_navbar .hamburger:hover{
     color: #007dc3;
+   }
+
+   .dropdown-toggle{
+     color: #0B4A72;
+    padding-right: 2cm;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
    }

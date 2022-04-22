@@ -13,7 +13,7 @@ import { AccountService } from '../_services/account.service';
 export class HeaderComponent implements OnInit {
   model:any = {};
   currentUser$: Observable<User>;
-  
+ 
   constructor(public accountService: AccountService, private router: Router) { }
 
   ngOnInit(): void {
@@ -34,3 +34,4 @@ export class HeaderComponent implements OnInit {
   }
 
 }
+

@@ -1,13 +1,10 @@
-  <nav class="top_navbar" >
-
-
+ <div class="top_navbar" >
       <!--<img id="bloc1"  src="https://sso.hcmut.edu.vn/cas/images/bk_logo.png" alt="Logo" width="40" height="40">-->
 
       <div class="logo" routerLink="/" routerLinkActive="active">University of Technology</div>
+      <img alt="BK" src="	https://sso.hcmut.edu.vn/cas/images/bk_logo.png">
       <div class="menu">
-        <div class="hamburger">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
+        
       </div>
 
         <!--<div class="alert alert-dismissible alert-success"  *ngIf="(accountService.currentUser$ | async)" >
@@ -15,14 +12,14 @@
           <strong>Login Successfully</strong>.
         </div>-->
 
-        <!--<div class="dropdown"  *ngIf="(accountService.currentUser$ | async) as user"  dropdown>
-          <a class="dropdown-toggle text-light" style="padding: 2cm;" dropdownToggle>Welcome {{user.username| titlecase}}</a>
+        <div class="dropdown"  *ngIf="(accountService.currentUser$ | async) as user"  dropdown>
+          <a class="dropdown-toggle" dropdownToggle>Welcome {{user.username| titlecase}}</a>
             <div class="dropdown-menu mt-3"*dropdownMenu>
-            <a class="dropdown-item">Edit Profile</a>
+            <a class="dropdown-item">Settings</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item"(click)="logout()">Logout</a>
               </div>
-            </div>-->
+            </div>
 
         <form *ngIf="(accountService.currentUser$ | async) === null" #loginForm ="ngForm" class="d-flex" (ngSubmit)="login()" 
         autocomplete="off">
@@ -38,6 +35,7 @@
           class="form-control me-2" 
           type="password" 
           placeholder="Password">
-          <button class="btn btn-outline-success" type="submit">Login</button>
+          <button class="button-L" type="submit">Login</button>
         </form>
-  </nav>
+ </div>
+  

@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { MatGridList } from '@angular/material/grid-list';
+import { StoreSummary } from '../_models/store-summary';
+import { StoreSummaryService } from '../_services/store-summary.service';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -29,5 +31,14 @@ export class DashboardComponent {
     })
   );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
-}
+  miniCardData: StoreSummary[];
+
+  constructor(private breakpointObserver: BreakpointObserver, private summaryService: StoreSummaryService) {}
+
+  ngOnInit() {
+    this.summaryService.getStoreSummary().subscribe({
+      next: summaryData => {
+        this.miniCardData = summaryData;
+      }
+    });
+}}

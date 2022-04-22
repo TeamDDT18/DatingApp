@@ -35,6 +35,12 @@ import { RouterModule } from '@angular/router';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { SpeedchartComponent } from './charts/speedchart/speedchart.component';
+import { MiniCardComponent } from './charts/mini-card/mini-card.component';
+import { OrdersTableComponent } from './charts/orders-table/orders-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -54,7 +60,9 @@ import { SpeedchartComponent } from './charts/speedchart/speedchart.component';
     ServerErrorComponent,
     DashboardComponent,
     CardComponent,
-    SpeedchartComponent
+    SpeedchartComponent,
+    MiniCardComponent,
+    OrdersTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,7 +81,11 @@ import { SpeedchartComponent } from './charts/speedchart/speedchart.component';
     LayoutModule, 
     RouterModule,
     MatSidenavModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatChipsModule
   ],
   providers: [
     {

@@ -1,26 +1,31 @@
- <div class="sidebar">
-   <div class="sidebar_inner">
+  <div class="sidebar" (click)="changeSize = !changeSize" [ngStyle]="{width: changeSize == true ? '200px' : '70px'}">
+    <div class="sidebar_inner">
+
       <ul style="list-style: none">
-        <ng-container *ngIf="(accountService.currentUser$ | async)">
+
+        <div class="hamburger">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+          <ng-container *ngIf="(accountService.currentUser$ | async)">
 
           <li>
             <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">
               <span class="icon" ><i class="fa fa-qrcode" ></i></span>
-              <span class="text">Dashboard</span>
+              <span *ngIf="changeSize" class="text">Dashboard</span>
             </a>
           </li>
 
           <li>
             <a class="nav-link" routerLink="/customers" routerLinkActive="active">
               <span class="icon" ><i class="fa fa-id-badge" ></i></span>
-              <span class="text">Customers</span>
+              <span *ngIf="changeSize" class="text">Customer</span>
             </a>
           </li>
 
           <li>
             <a class="nav-link" routerLink="/reports" routerLinkActive="active">
               <span class="icon" ><i class="fa fa-folder-open" ></i></span>
-              <span class="text">Reports</span>
+              <span *ngIf="changeSize" class="text">Reports</span>
             </a>
           </li>
           
@@ -29,9 +34,11 @@
             <a class="link-secondary" routerLink="/newreport" routerLinkActive="active" aria-label="Add a new report">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
             </a>
-          </h6>-->  
-       
-        </ng-container>
+          </h6>-->
+          </ng-container>
+        
       </ul>
-    </div>
-  </div>
+     </div>
+   </div> 
+ 
+ 

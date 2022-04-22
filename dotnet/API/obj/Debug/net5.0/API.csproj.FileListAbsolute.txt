@@ -60,3 +60,5 @@ C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\System.Identit
 C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\package-lock.json
 C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\package.json
 C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\obj\Debug\net5.0\refint\API.dll
+C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\MySqlConnector.dll
+C:\BachKhoa\nckh\My_Server\AngularApp\dotnet\API\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
