@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-<<<<<<< HEAD
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -93,24 +92,6 @@ import {MatChipsModule} from '@angular/material/chips';
       provide: HTTP_INTERCEPTORS,useClass: ErrorInterceptor, multi: true
     }
   ],
-=======
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import {HttpClientModule} from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
->>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
   bootstrap: [AppComponent]
 })
 export class AppModule { }
