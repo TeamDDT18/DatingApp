@@ -27,15 +27,10 @@
               "src/assets"
             ],
             "styles": [
-<<<<<<< HEAD
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "node_modules/ngx-toastr/toastr.css",
-=======
-              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
->>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
               "src/styles.css"
             ],
             "scripts": []
@@ -76,13 +71,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-<<<<<<< HEAD
             "sslKey": "./ssl/localhost-key.pem",
             "sslCert": "./ssl/localhost.pem",
-=======
-            "sslKey": "./ssl/localhost-key.key",
-            "sslCert": "./ssl/localhost.crt",
->>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
             "ssl": true
           },
           "configurations": {
@@ -113,15 +103,11 @@
               "src/assets"
             ],
             "styles": [
-<<<<<<< HEAD
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
-=======
->>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
               "src/styles.css"
             ],
             "scripts": []
           }
-<<<<<<< HEAD
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
@@ -131,19 +117,12 @@
               "src/**/*.html"
             ]
           }
-=======
->>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
         }
       }
     }
   },
-<<<<<<< HEAD
   "defaultProject": "client",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   }
 }
-=======
-  "defaultProject": "client"
-}
->>>>>>> 9a053b2758aaaaaf4c1b200d067a5f0f90bcf841
